@@ -1,0 +1,17 @@
+[0.792s] Invoking command in '/home/dev/ws_build/build/omni3wd_perception_stack': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_perception_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_perception_stack/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_perception_stack/build --no-deps symlink_data
+[0.888s] /usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[0.888s]   warnings.warn(msg)
+[0.946s] running develop
+[1.012s] running egg_info
+[1.018s] writing omni3wd_perception_stack.egg-info/PKG-INFO
+[1.019s] writing dependency_links to omni3wd_perception_stack.egg-info/dependency_links.txt
+[1.019s] writing requirements to omni3wd_perception_stack.egg-info/requires.txt
+[1.019s] writing top-level names to omni3wd_perception_stack.egg-info/top_level.txt
+[1.032s] reading manifest file 'omni3wd_perception_stack.egg-info/SOURCES.txt'
+[1.033s] writing manifest file 'omni3wd_perception_stack.egg-info/SOURCES.txt'
+[1.040s] running build_ext
+[1.040s] Creating /home/dev/ws_build/install/omni3wd_perception_stack/lib/python3.12/site-packages/omni3wd-perception-stack.egg-link (link to .)
+[1.040s] 
+[1.040s] Installed /home/dev/ws_build/build/omni3wd_perception_stack
+[1.040s] running symlink_data
+[1.077s] Invoked command in '/home/dev/ws_build/build/omni3wd_perception_stack' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_perception_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_perception_stack/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_perception_stack/build --no-deps symlink_data

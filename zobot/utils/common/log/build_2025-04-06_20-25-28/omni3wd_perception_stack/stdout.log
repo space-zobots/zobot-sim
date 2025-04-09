@@ -1,0 +1,13 @@
+running develop
+running egg_info
+writing omni3wd_perception_stack.egg-info/PKG-INFO
+writing dependency_links to omni3wd_perception_stack.egg-info/dependency_links.txt
+writing requirements to omni3wd_perception_stack.egg-info/requires.txt
+writing top-level names to omni3wd_perception_stack.egg-info/top_level.txt
+reading manifest file 'omni3wd_perception_stack.egg-info/SOURCES.txt'
+writing manifest file 'omni3wd_perception_stack.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dev/ws_build/install/omni3wd_perception_stack/lib/python3.12/site-packages/omni3wd-perception-stack.egg-link (link to .)
+
+Installed /home/dev/ws_build/build/omni3wd_perception_stack
+running symlink_data

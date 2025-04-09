@@ -1,0 +1,20 @@
+/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+running egg_info
+creating omni3wd.egg-info
+writing omni3wd.egg-info/PKG-INFO
+writing dependency_links to omni3wd.egg-info/dependency_links.txt
+writing requirements to omni3wd.egg-info/requires.txt
+writing top-level names to omni3wd.egg-info/top_level.txt
+writing manifest file 'omni3wd.egg-info/SOURCES.txt'
+reading manifest file 'omni3wd.egg-info/SOURCES.txt'
+writing manifest file 'omni3wd.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dev/ws_build/install/omni3wd/lib/python3.12/site-packages/omni3wd.egg-link (link to .)
+
+Installed /home/dev/ws_build/build/omni3wd
+running symlink_data
+creating /home/dev/ws_build/install/omni3wd/share/ament_index/resource_index/packages
+symbolically linking /home/dev/ws_build/build/omni3wd/resource/omni3wd -> /home/dev/ws_build/install/omni3wd/share/ament_index/resource_index/packages
+symbolically linking /home/dev/ws_build/build/omni3wd/package.xml -> /home/dev/ws_build/install/omni3wd/share/omni3wd

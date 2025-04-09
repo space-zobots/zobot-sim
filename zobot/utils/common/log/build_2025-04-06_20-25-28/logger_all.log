@@ -1,0 +1,265 @@
+[0.073s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build', '--base-paths', '/home/dev/ai_ws/ros', '--build-base', '/home/dev/ws_build/build', '--install-base', '/home/dev/ws_build/install', '--symlink-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release'][0m
+[0.073s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='/home/dev/ws_build/build', install_base='/home/dev/ws_build/install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/dev/ai_ws/ros'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7cd4b818ae10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cd4b8450d40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cd4b8450d40>>)[0m
+[0.092s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.092s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.092s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.092s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.092s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.092s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/dev/ai_ws/ros'
+[0.092s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extensions ['ignore', 'ignore_ament_install']
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'ignore'
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'ignore_ament_install'
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extensions ['colcon_pkg']
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'colcon_pkg'
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extensions ['colcon_meta']
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'colcon_meta'
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extensions ['ros']
+[0.093s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'ros'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extensions ['cmake', 'python']
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'cmake'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'python'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extensions ['python_setup_py']
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros) by extension 'python_setup_py'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extension 'ignore'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extension 'ignore_ament_install'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extensions ['colcon_pkg']
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extension 'colcon_pkg'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extensions ['colcon_meta']
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extension 'colcon_meta'
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extensions ['ros']
+[0.106s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd) by extension 'ros'
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage '/home/dev/ai_ws/ros/omni3wd' with type 'ros.ament_python' and name 'omni3wd'[0m
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extensions ['ignore', 'ignore_ament_install']
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extension 'ignore'
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extension 'ignore_ament_install'
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extensions ['colcon_pkg']
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extension 'colcon_pkg'
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extensions ['colcon_meta']
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extension 'colcon_meta'
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extensions ['ros']
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_navigation_stack) by extension 'ros'
+[0.108s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage '/home/dev/ai_ws/ros/omni3wd_navigation_stack' with type 'ros.ament_python' and name 'omni3wd_navigation_stack'[0m
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extension 'ignore'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extension 'ignore_ament_install'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extensions ['colcon_pkg']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extension 'colcon_pkg'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extensions ['colcon_meta']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extension 'colcon_meta'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extensions ['ros']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_perception_stack) by extension 'ros'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage '/home/dev/ai_ws/ros/omni3wd_perception_stack' with type 'ros.ament_python' and name 'omni3wd_perception_stack'[0m
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extension 'ignore'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extension 'ignore_ament_install'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extensions ['colcon_pkg']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extension 'colcon_pkg'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extensions ['colcon_meta']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extension 'colcon_meta'
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extensions ['ros']
+[0.109s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(/home/dev/ai_ws/ros/omni3wd_robot_description) by extension 'ros'
+[0.110s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage '/home/dev/ai_ws/ros/omni3wd_robot_description' with type 'ros.ament_python' and name 'omni3wd_robot_description'[0m
+[0.110s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.117s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.117s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.118s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'cmake_target' from command line to 'None'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'cmake_clean_cache' from command line to 'False'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'cmake_clean_first' from command line to 'False'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'cmake_force_configure' from command line to 'False'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'ament_cmake_args' from command line to 'None'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'catkin_cmake_args' from command line to 'None'
+[0.118s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'omni3wd' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/ws_build/build/omni3wd', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/ws_build/install/omni3wd', 'merge_install': False, 'path': '/home/dev/ai_ws/ros/omni3wd', 'symlink_install': True, 'test_result_base': None}[0m
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'cmake_target' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'cmake_clean_cache' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'cmake_clean_first' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'cmake_force_configure' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'ament_cmake_args' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'catkin_cmake_args' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_navigation_stack' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'omni3wd_navigation_stack' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/ws_build/build/omni3wd_navigation_stack', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/ws_build/install/omni3wd_navigation_stack', 'merge_install': False, 'path': '/home/dev/ai_ws/ros/omni3wd_navigation_stack', 'symlink_install': True, 'test_result_base': None}[0m
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'cmake_target' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'cmake_clean_cache' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'cmake_clean_first' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'cmake_force_configure' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'ament_cmake_args' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'catkin_cmake_args' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_perception_stack' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'omni3wd_perception_stack' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/ws_build/build/omni3wd_perception_stack', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/ws_build/install/omni3wd_perception_stack', 'merge_install': False, 'path': '/home/dev/ai_ws/ros/omni3wd_perception_stack', 'symlink_install': True, 'test_result_base': None}[0m
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'cmake_target' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'omni3wd_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.119s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'omni3wd_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dev/ws_build/build/omni3wd_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dev/ws_build/install/omni3wd_robot_description', 'merge_install': False, 'path': '/home/dev/ai_ws/ros/omni3wd_robot_description', 'symlink_install': True, 'test_result_base': None}[0m
+[0.119s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.120s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.120s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/dev/ai_ws/ros/omni3wd' with build type 'ament_python'
+[0.120s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd', 'ament_prefix_path')
+[0.121s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.121s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd/share/omni3wd/hook/ament_prefix_path.ps1'
+[0.122s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd/share/omni3wd/hook/ament_prefix_path.dsv'
+[0.122s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd/share/omni3wd/hook/ament_prefix_path.sh'
+[0.122s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.122s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.123s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/dev/ai_ws/ros/omni3wd_navigation_stack' with build type 'ament_python'
+[0.123s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_navigation_stack', 'ament_prefix_path')
+[0.123s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/ament_prefix_path.ps1'
+[0.124s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/ament_prefix_path.dsv'
+[0.124s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/ament_prefix_path.sh'
+[0.124s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.124s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.125s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/dev/ai_ws/ros/omni3wd_perception_stack' with build type 'ament_python'
+[0.125s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_perception_stack', 'ament_prefix_path')
+[0.125s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/ament_prefix_path.ps1'
+[0.125s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/ament_prefix_path.dsv'
+[0.125s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/ament_prefix_path.sh'
+[0.125s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.125s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.126s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/dev/ai_ws/ros/omni3wd_robot_description' with build type 'ament_python'
+[0.126s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_robot_description', 'ament_prefix_path')
+[0.126s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/hook/ament_prefix_path.ps1'
+[0.126s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/hook/ament_prefix_path.dsv'
+[0.126s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/hook/ament_prefix_path.sh'
+[0.127s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.127s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.314s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/dev/ai_ws/ros/omni3wd_navigation_stack'
+[0.314s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.314s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.433s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/dev/ai_ws/ros/omni3wd_perception_stack'
+[0.434s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.434s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.545s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/dev/ai_ws/ros/omni3wd'
+[0.546s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.546s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.667s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/dev/ai_ws/ros/omni3wd_robot_description'
+[0.667s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.667s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.916s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/dev/ws_build/build/omni3wd_navigation_stack': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_navigation_stack/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_navigation_stack/build --no-deps symlink_data[0m
+[0.917s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/dev/ws_build/build/omni3wd_perception_stack': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_perception_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_perception_stack/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_perception_stack/build --no-deps symlink_data[0m
+[0.927s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/dev/ws_build/build/omni3wd': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd/build --no-deps symlink_data[0m
+[0.948s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/dev/ws_build/build/omni3wd_robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_robot_description/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_robot_description/build --no-deps symlink_data[0m
+[1.194s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_navigation_stack', 'pythonpath_develop')
+[1.194s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/pythonpath_develop.ps1'
+[1.194s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/dev/ws_build/build/omni3wd_navigation_stack' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_navigation_stack/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_navigation_stack/build --no-deps symlink_data[0m
+[1.195s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/build/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/pythonpath_develop.dsv'
+[1.195s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/pythonpath_develop.sh'
+[1.197s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_navigation_stack' for CMake module files
+[1.197s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_navigation_stack' for CMake config files
+[1.197s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_navigation_stack/lib'
+[1.198s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_navigation_stack/bin'
+[1.198s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_navigation_stack/lib/pkgconfig/omni3wd_navigation_stack.pc'
+[1.198s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_navigation_stack/lib/python3.12/site-packages'
+[1.198s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_navigation_stack', 'pythonpath')
+[1.198s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/pythonpath.ps1'
+[1.198s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/pythonpath.dsv'
+[1.198s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/hook/pythonpath.sh'
+[1.199s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_navigation_stack/bin'
+[1.199s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(omni3wd_navigation_stack)
+[1.199s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/package.ps1'
+[1.199s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/package.dsv'
+[1.200s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/package.sh'
+[1.200s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/package.bash'
+[1.200s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_navigation_stack/share/omni3wd_navigation_stack/package.zsh'
+[1.201s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/dev/ws_build/install/omni3wd_navigation_stack/share/colcon-core/packages/omni3wd_navigation_stack)
+[1.202s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_perception_stack', 'pythonpath_develop')
+[1.202s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/pythonpath_develop.ps1'
+[1.202s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/dev/ws_build/build/omni3wd_perception_stack' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_perception_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_perception_stack/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_perception_stack/build --no-deps symlink_data[0m
+[1.202s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/build/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/pythonpath_develop.dsv'
+[1.202s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/pythonpath_develop.sh'
+[1.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_perception_stack' for CMake module files
+[1.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_perception_stack' for CMake config files
+[1.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_perception_stack/lib'
+[1.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_perception_stack/bin'
+[1.203s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_perception_stack/lib/pkgconfig/omni3wd_perception_stack.pc'
+[1.204s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_perception_stack/lib/python3.12/site-packages'
+[1.204s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_perception_stack', 'pythonpath')
+[1.204s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/pythonpath.ps1'
+[1.204s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/pythonpath.dsv'
+[1.204s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/hook/pythonpath.sh'
+[1.204s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_perception_stack/bin'
+[1.204s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(omni3wd_perception_stack)
+[1.205s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/package.ps1'
+[1.205s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/package.dsv'
+[1.205s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/package.sh'
+[1.205s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/package.bash'
+[1.205s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_perception_stack/share/omni3wd_perception_stack/package.zsh'
+[1.206s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/dev/ws_build/install/omni3wd_perception_stack/share/colcon-core/packages/omni3wd_perception_stack)
+[1.206s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd', 'pythonpath_develop')
+[1.206s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd/share/omni3wd/hook/pythonpath_develop.ps1'
+[1.206s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/dev/ws_build/build/omni3wd' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd/build --no-deps symlink_data[0m
+[1.206s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/build/omni3wd/share/omni3wd/hook/pythonpath_develop.dsv'
+[1.207s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd/share/omni3wd/hook/pythonpath_develop.sh'
+[1.207s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd' for CMake module files
+[1.207s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd' for CMake config files
+[1.207s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd/lib'
+[1.207s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd/bin'
+[1.208s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd/lib/pkgconfig/omni3wd.pc'
+[1.208s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd/lib/python3.12/site-packages'
+[1.208s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd', 'pythonpath')
+[1.208s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd/share/omni3wd/hook/pythonpath.ps1'
+[1.208s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd/share/omni3wd/hook/pythonpath.dsv'
+[1.208s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd/share/omni3wd/hook/pythonpath.sh'
+[1.209s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd/bin'
+[1.209s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(omni3wd)
+[1.209s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd/share/omni3wd/package.ps1'
+[1.209s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/dev/ws_build/install/omni3wd/share/omni3wd/package.dsv'
+[1.209s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd/share/omni3wd/package.sh'
+[1.210s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd/share/omni3wd/package.bash'
+[1.210s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd/share/omni3wd/package.zsh'
+[1.210s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/dev/ws_build/install/omni3wd/share/colcon-core/packages/omni3wd)
+[1.214s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_robot_description', 'pythonpath_develop')
+[1.214s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd_robot_description/share/omni3wd_robot_description/hook/pythonpath_develop.ps1'
+[1.214s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/dev/ws_build/build/omni3wd_robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dev/ws_build/build/omni3wd_robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/ws_build/install/omni3wd_robot_description/lib/python3.12/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/ws_build/build/omni3wd_robot_description/build --no-deps symlink_data[0m
+[1.215s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/build/omni3wd_robot_description/share/omni3wd_robot_description/hook/pythonpath_develop.dsv'
+[1.215s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/build/omni3wd_robot_description/share/omni3wd_robot_description/hook/pythonpath_develop.sh'
+[1.215s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_robot_description' for CMake module files
+[1.216s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_robot_description' for CMake config files
+[1.216s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_robot_description/lib'
+[1.216s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_robot_description/bin'
+[1.216s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_robot_description/lib/pkgconfig/omni3wd_robot_description.pc'
+[1.216s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_robot_description/lib/python3.12/site-packages'
+[1.216s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('omni3wd_robot_description', 'pythonpath')
+[1.216s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/hook/pythonpath.ps1'
+[1.217s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/hook/pythonpath.dsv'
+[1.217s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/hook/pythonpath.sh'
+[1.217s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/dev/ws_build/install/omni3wd_robot_description/bin'
+[1.217s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(omni3wd_robot_description)
+[1.217s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/package.ps1'
+[1.218s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/package.dsv'
+[1.218s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/package.sh'
+[1.218s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/package.bash'
+[1.218s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/dev/ws_build/install/omni3wd_robot_description/share/omni3wd_robot_description/package.zsh'
+[1.218s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/dev/ws_build/install/omni3wd_robot_description/share/colcon-core/packages/omni3wd_robot_description)
+[1.218s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[1.219s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[1.219s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[1.219s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[1.223s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.223s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.223s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.223s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[1.226s] [34mcolcon.colcon_notification.desktop_notification.notify2[0m [1;30mDEBUG[0m [32mFailed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message[0m
+[1.226s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[1.227s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/dev/ws_build/install/local_setup.ps1'
+[1.227s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/dev/ws_build/install/_local_setup_util_ps1.py'
+[1.228s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/dev/ws_build/install/setup.ps1'
+[1.228s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/dev/ws_build/install/local_setup.sh'
+[1.229s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/dev/ws_build/install/_local_setup_util_sh.py'
+[1.229s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/dev/ws_build/install/setup.sh'
+[1.229s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/dev/ws_build/install/local_setup.bash'
+[1.230s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/dev/ws_build/install/setup.bash'
+[1.230s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/dev/ws_build/install/local_setup.zsh'
+[1.230s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/dev/ws_build/install/setup.zsh'
