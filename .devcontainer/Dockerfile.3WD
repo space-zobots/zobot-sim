@@ -1,0 +1,56 @@
+FROM rwthika/ros2-ml:jazzy-desktop-full-tf2.18.0-torch2.5.0 AS base_builder
+
+WORKDIR /home/dev
+COPY /ros/additional_pip_requirements.txt /additional_pip_requirements.txt
+COPY /ros/additional_deb_requirements.txt /additional_deb_requirements.txt
+
+RUN --mount=type=cache,target=/var/cache/pip \
+    pip install -r /additional_pip_requirements.txt
+
+RUN --mount=type=cache,target=/var/cache/apt \
+    apt-get update && \
+    xargs apt-get install -y < /additional_deb_requirements.txt && \
+    rm -rf /var/lib/apt/lists/*
+
+###################################################################################################
+FROM base_builder AS custom-builder
+COPY /zobot/utils/common /common
+
+
+###################################################################################################
+
+FROM custom-builder AS external_builder
+COPY /zobot/utils/external-sdks/build-librealsense.sh /build-librealsense.sh 
+# RUN chmod +x /build-librealsense.sh && \
+#     /build-librealsense.sh
+
+###################################################################################################
+FROM external_builder AS ros_builder
+COPY /ros /ros
+COPY /ros/additional_ros_requirements.txt /additional_ros_requirements.txt
+
+RUN --mount=type=cache,target=/var/cache/apt \
+    apt-get update && \
+    xargs apt-get install -y < /additional_ros_requirements.txt
+
+RUN --mount=type=cache,target=/var/cache/apt \
+    apt-get update && \
+    rosdep update && \
+    rosdep install --from-paths /ros --ignore-src -r -y
+
+RUN mkdir -p /home/dev/ws_build
+
+RUN --mount=type=cache,target=/root/.cache/colcon \
+    cd /ros && \
+    colcon build \
+        --symlink-install \
+        --base-paths /ros \
+        --build-base /home/dev/ws_build/build \
+        --install-base /home/dev/ws_build/install \
+        --cmake-args -DCMAKE_BUILD_TYPE=Release \
+        --test-packages \
+        --event-handlers \
+    && source /home/dev/ws_build/install/setup.bash \
+    && source /opt/ros/jazzy/setup.bash
+
+##################################################################################################
