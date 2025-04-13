@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'omni3wd'
+package_name = 'isaac_spawn'
 
 setup(
     name=package_name,
@@ -17,9 +17,7 @@ setup(
     maintainer_email='snknitheesh@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    extras_require={
-        'test': ['pytest']
-    },
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
         ],

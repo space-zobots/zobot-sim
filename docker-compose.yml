@@ -1,52 +1,52 @@
 services:
-  # isaac-sim:
-  #   image: nvcr.io/nvidia/isaac-sim:4.5.0 
-  #   container_name: isaac-sim-4.5
-  #   entrypoint: bash
-  #   tty: true
-  #   stdin_open: true
-  #   privileged: true
-  #   runtime: nvidia
-  #   environment:
-  #     - ACCEPT_EULA=Y
-  #     - DISPLAY
-  #     # - LD_LIBRARY_PATH=/isaac-sim/exyts/omni.isaac.ros2_bridge/humble/lib
-  #     # - ROS_DISTRO=humble
-  #     - ROS_DOMAIN_ID=${ROS_DOMAIN_ID}
-  #     # - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-  #   network_mode: host
-  #   ipc: host
-  #   volumes:
-  #     -  $ZOBOT_WS/issac-cache/cache/kit:/isaac-sim/kit/cache:rw
-  #     -  $ZOBOT_WS/issac-cache/cache/ov:/root/.cache/ov:rw
-  #     -  $ZOBOT_WS/issac-cache/cache/pip:/root/.cache/pip:rw
-  #     -  $ZOBOT_WS/issac-cache/cache/glcache:/root/.cache/nvidia/GLCache:rw
-  #     -  $ZOBOT_WS/issac-cache/cache/computecache:/root/.nv/ComputeCache:rw
-  #     -  $ZOBOT_WS/issac-cache/logs:/root/.nvidia-omniverse/logs:rw
-  #     -  $ZOBOT_WS/issac-cache/data:/root/.local/share/ov/data:rw
-  #     -  $ZOBOT_WS/issac-cache/documents:/root/Documents:rw
-  #     - /tmp/.X11-unix:/tmp/.X11-unix
-  #   cap_add:
-  #     - SYS_ADMIN
-  #   devices:
-  #     - /dev/fuse
-  #   deploy:
-  #     resources:
-  #       reservations:
-  #         devices:
-  #           - driver: nvidia
-  #             count: all
-  #             capabilities: [gpu]
-  #   command: " ./runapp.sh --allow-root"
-
-  zobot_env:
-    build:
-      context: .
-      dockerfile: ./zobot/docker/Dockerfile.3WD
-    container_name: zobot_ros
+  isaac-sim:
+    image: nvcr.io/nvidia/isaac-sim:4.5.0 
+    container_name: isaac-sim-4.5
+    entrypoint: bash
+    tty: true
+    stdin_open: true
+    privileged: true
+    runtime: nvidia
     environment:
-      - ROS_DOMAIN_ID=12
-      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - ACCEPT_EULA=Y
+      - DISPLAY
+      - LD_LIBRARY_PATH=/isaac-sim/exts/isaacsim.ros2.bridge/humble/lib
+      - ROS_DISTRO=humble
+      - ROS_DOMAIN_ID=${ROS_DOMAIN_ID}
     network_mode: host
-    command: bash -c "source /opt/ros/jazzy/setup.bash && source /ros/install/setup.bash"
+    ipc: host
+    volumes:
+      -  ${HOME}/.isaac_independant/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw
+      -  ${HOME}/.isaac_independant/isaac-sim/cache/ov:/root/.cache/ov:rw
+      -  ${HOME}/.isaac_independant/isaac-sim/cache/pip:/root/.cache/pip:rw
+      -  ${HOME}/.isaac_independant/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw
+      -  ${HOME}/.isaac_independant/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw
+      -  ${HOME}/.isaac_independant/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw
+      -  ${HOME}/.isaac_independant/isaac-sim/data:/root/.local/share/ov/data:rw
+      -  ${HOME}/.isaac_independant/isaac-sim/documents:/root/Documents:rw
+      -  /tmp/.X11-unix:/tmp/.X11-unix
+      -  ${ZOBOT_WS}:/home/zobot_ws
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/fuse
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # command: " ./runapp.sh --allow-root"
+
+  # zobot_env:
+  #   build:
+  #     context: .
+  #     dockerfile: ./zobot/docker/Dockerfile.3WD
+  #   container_name: zobot_ros
+  #   environment:
+  #     - ROS_DOMAIN_ID=12
+  #     - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+  #   network_mode: host
+  #   command: bash -c "source /opt/ros/jazzy/setup.bash && source /ros/install/setup.bash"
 
