@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+
+set -e  # Exit immediately on any error
+
+ROS_WS="/home/dev/ai_ws/ros"
+BUILD_BASE="/home/dev/ws_build/build"
+INSTALL_BASE="/home/dev/ws_build/install"
+LOG_BASE="/home/dev/ws_build/log"
+
+function build_all() {
+    echo "🔧 Building all packages in $ROS_WS..."
+    colcon build \
+        --base-paths "$ROS_WS" \
+        --build-base "$BUILD_BASE" \
+        --install-base "$INSTALL_BASE" \
+        --symlink-install \
+        --cmake-args -DCMAKE_BUILD_TYPE=Release
+}
+
+function run_tests() {
+    echo "🧪 Running tests..."
+    colcon test \
+        --build-base "$BUILD_BASE" \
+        --install-base "$INSTALL_BASE" 
+}
+
+function clean_build() {
+    echo "🧹 Cleaning build, install, and log directories..."
+    rm -rf "$BUILD_BASE" "$INSTALL_BASE" "$LOG_BASE"
+    build_all
+}
+
+function build_selected_packages() {
+    echo "📦 Fetching available packages..."
+    pushd "$ROS_WS" > /dev/null
+    local packages
+    packages=$(colcon list --names-only)
+
+    echo "📋 Select a package to build:"
+    select package in $packages "Quit"; do
+        if [[ "$package" == "Quit" ]]; then
+            break
+        elif [[ -n "$package" ]]; then
+            echo "🔧 Building package: $package"
+            colcon build \
+                --packages-select "$package" \
+                --build-base "$BUILD_BASE" \
+                --install-base "$INSTALL_BASE" \
+                --symlink-install \
+                --cmake-args -DCMAKE_BUILD_TYPE=Release
+
+            echo "✅ Sourcing install setup for $package"
+            source "$INSTALL_BASE/install/setup.bash"
+        else
+            echo "❌ Invalid selection."
+        fi
+    done
+    popd > /dev/null
+}
+
+case "$1" in
+    "")
+        build_all
+        ;;
+    test)
+        run_tests
+        ;;
+    clean)
+        clean_build
+        ;;
+    packages)
+        build_selected_packages
+        ;;
+    *)
+        echo "❌ Unknown command: $1"
+        echo "Usage:"
+        echo "  cb           → build all packages"
+        echo "  cb test      → run tests"
+        echo "  cb clean     → clean and rebuild"
+        echo "  cb packages  → interactively select packages to build"
+        ;;
+esac
